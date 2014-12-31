@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+ <title>John VanOrange</title>
+ 
+ <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+ 
+ <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
+ 
+ <link rel="import" href="../elements/user-profile.html">
+</head>
+
+<body unresolved>
+ <header>
+  <h1><a href='/'><span class='first'>John</span> <span class='second'>Van<span class='title_o'>O</span>range</span></a></h1>
+  <user-profile user='cbulock' />
+  <sign-out />
+  <search-button />
+ </header>
+ 
+ <image-display uid='9xSt2M'>
+  <main-image href='/rand?56c80f678e124a40bfc8ba63b2b7213f' src='http://media.jvo.io/media/b3a2c915fc4bd7cc3c6a4ab32a26d380.jpeg' height='900' width='1200'/>
+  <image-footer>
+   <report-image />
+   <image-menu icon='cog'>
+    <menu-item icon='b' href='/brazzify/9xSt2M'>Brazzify</menu-item>
+    <menu-item icon='google' href='http://www.google.com/searchbyimage?image_url=http://media.jvo.io/media/b3a2c915fc4bd7cc3c6a4ab32a26d380.jpeg'>Search using Google</menu-item>
+    <menu-item icon='search' href='http://tineye.com/search?url=http://media.jvo.io/media/b3a2c915fc4bd7cc3c6a4ab32a26d380.jpeg'>Search using Tineye</menu-item>
+    <menu-item icon='info-circle' href='/info/9xSt2M'>Details</menu-item>
+    <menu-item icon='cog' href='/admin/image/9xSt2M'>Admin</menu-item>
+   </image-menu>
+  </image-footer>
+  <image-buttons>
+   <like-button />
+   <fav-button />
+   <dislike-button />
+  </image-buttons>
+  <tag-display>
+   <add-tag />
+  </tag-display>
+ </image-display>
+ 
+ <social-links>
+  <facebook-like />
+  <pintrest-pin />
+  <google-plusone />
+ </social-links>
+ 
+ <footer>
+  &copy;2014 <a href='/jvon'>John VanOrange Network</a> | 
+  <a href="/tos">Legal</a> | 
+  <a href="/privacy">Privacy</a>
+ </footer>
+ 
+</body>
+</html>
