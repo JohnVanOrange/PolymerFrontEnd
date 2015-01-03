@@ -1,0 +1,106 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+ 
+<link rel='stylesheet' type='text/css' href='../bower_components/WebIcons/fontello/fontello.css'>
+
+<polymer-element name="standard-button" attributes='icon type'>
+  <template>
+   <style>
+     @font-face {
+      font-family: 'fontello';
+      src: url('../bower_components/WebIcons/font/fontello.eot');
+      src: url('../bower_components/WebIcons/font/fontello.eot?#iefix') format('embedded-opentype'),
+           url('../bower_components/WebIcons/font/fontello.woff') format('woff'),
+           url('../bower_components/WebIcons/font/fontello.ttf') format('truetype'),
+           url('../bower_components/WebIcons/font/fontello.svg#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+     }
+    button {
+      display: inline-block;
+      font-weight: normal;
+      cursor: pointer;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      border: 1px solid transparent;
+      -webkit-user-select: none;
+    }
+    button:hover {
+      text-decoration: underline;
+    }
+    button[type=link] {
+      color: #428bca;
+      background-color: transparent;
+    }
+    button:not([icon=none])::before {
+     font-family: "fontello";
+     font-style: normal;
+     font-weight: normal;
+     speak: none;
+     display: inline-block;
+     text-decoration: none;
+     width: 1em;
+     margin-right: .2em;
+     text-align: center;
+     font-variant: normal;
+     text-transform: none;
+     line-height: 1em;
+    }
+    
+    [icon=android]::before { content: '\26'; } /* '&amp;' */
+    [icon=reddit]::before { content: '\3e'; } /* '&gt;' */
+    [icon=google]::before { content: '\47'; } /* 'G' */
+    [icon=keyboard]::before { content: '\2328'; } /* '⌨' */
+    [icon=cloud]::before { content: '\2601'; } /* '☁' */
+    [icon=flag]::before { content: '\2691'; } /* '⚑' */
+    [icon=tools]::before { content: '\2692'; } /* '⚒' */
+    [icon=cog]::before { content: '\2699'; } /* '⚙' */
+    [icon=attention]::before { content: '\26a0'; } /* '⚠' */
+    [icon=plus-circled]::before { content: '\2795'; } /* '➕' */
+    [icon=user-add]::before { content: '\e700'; } /* '' */
+    [icon=info-circle]::before { content: '\e705'; } /* '' */
+    [icon=tag]::before { content: '\e70c'; } /* '' */
+    [icon=tags]::before { content: '\e70d'; } /* '' */
+    [icon=comment]::before { content: '\e718'; } /* '' */
+    [icon=share]::before { content: '\e73c'; } /* '' */
+    [icon=login]::before { content: '\e740'; } /* '' */
+    [icon=logout]::before { content: '\e741'; } /* '' */
+    [icon=resize-full]::before { content: '\e744'; } /* '' */
+    [icon=star-1]::before { content: '\e800'; } /* '' */
+    [icon=star-empty-1]::before { content: '\e801'; } /* '' */
+    [icon=picture-1]::before { content: '\e802'; } /* '' */
+    [icon=floppy]::before { content: '\e803'; } /* '' */
+    [icon=b]::before { content: '\e804'; } /* '' */
+    [icon=key]::before { content: '\e805'; } /* '' */
+    [icon=filter]::before { content: '\e806'; } /* '' */
+    [icon=heart-empty]::before { content: '\e807'; } /* '' */
+    [icon=heart]::before { content: '\e808'; } /* '' */
+    [icon=spin4]::before { content: '\e834'; } /* '' */
+    [icon=firefox]::before { content: '\e840'; } /* '' */
+    [icon=blank]::before { content: '\f0c8'; } /* '' */
+    [icon=menu]::before { content: '\f0c9'; } /* '' */
+    [icon=mail-alt]::before { content: '\f0e0'; } /* '' */
+    [icon=doc-alt]::before { content: '\f0f6'; } /* '' */
+    [icon=github]::before { content: '\f300'; } /* '' */
+    [icon=facebook-rect]::before { content: '\f301'; } /* '' */
+    [icon=twitter-bird]::before { content: '\f303'; } /* '' */
+    [icon=googleplus-rect]::before { content: '\f309'; } /* '' */
+    [icon=picture]::before { content: '🌄'; } /* '\1f304' */
+    [icon=thumbs-up]::before { content: '👍'; } /* '\1f44d' */
+    [icon=thumbs-down]::before { content: '👎'; } /* '\1f44e' */
+    [icon=user]::before { content: '👤'; } /* '\1f464' */
+    [icon=upload]::before { content: '📤'; } /* '\1f4e4' */
+    [icon=search]::before { content: '🔍'; } /* '\1f50d' */
+    [icon=link]::before { content: '🔗'; } /* '\1f517' */
+   </style>
+   
+   <button type={{type}} icon='{{icon}}'><content></content></button>
+  </template>
+
+  <script>
+    Polymer({
+      type: 'button',
+      icon: 'none'
+    })
+  </script>
+</polymer-element>

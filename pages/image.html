@@ -6,22 +6,26 @@
  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
  
  <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
- 
+
  <link rel="import" href="../elements/user-profile.html">
+ <link rel="import" href="../elements/sign-out.html">
+ <link rel="import" href="../bower_components/facebook-button/dist/facebook-button.html">
+ <link rel="import" href="../bower_components/pinterest-button/src/pinterest-button.html">
+ <link rel="import" href="../bower_components/gplus-elements/dist/gplus-one.html">
 </head>
 
 <body unresolved>
  <header>
   <h1><a href='/'><span class='first'>John</span> <span class='second'>Van<span class='title_o'>O</span>range</span></a></h1>
-  <user-profile user='cbulock' />
-  <sign-out />
-  <search-button />
+  <user-profile username='cbulock' hash='baf1ada66011a8dace4bee65cf78cb21'></user-profile>
+  <sign-out></sign-out>
+  <search-button></search-button>
  </header>
  
  <image-display uid='9xSt2M'>
   <main-image href='/rand?56c80f678e124a40bfc8ba63b2b7213f' src='http://media.jvo.io/media/b3a2c915fc4bd7cc3c6a4ab32a26d380.jpeg' height='900' width='1200'/>
   <image-footer>
-   <report-image />
+   <report-image></report-image>
    <image-menu icon='cog'>
     <menu-item icon='b' href='/brazzify/9xSt2M'>Brazzify</menu-item>
     <menu-item icon='google' href='http://www.google.com/searchbyimage?image_url=http://media.jvo.io/media/b3a2c915fc4bd7cc3c6a4ab32a26d380.jpeg'>Search using Google</menu-item>
@@ -31,19 +35,23 @@
    </image-menu>
   </image-footer>
   <image-buttons>
-   <like-button />
-   <fav-button />
-   <dislike-button />
+   <like-button></like-button>
+   <fav-button></fav-button>
+   <dislike-button></dislike-button>
   </image-buttons>
   <tag-display>
-   <add-tag />
+   <add-tag></add-tag>
   </tag-display>
  </image-display>
  
  <social-links>
-  <facebook-like />
-  <pintrest-pin />
-  <google-plusone />
+  <facebook-button href='http://next.jvo.io/pages/image.html'></facebook-button>
+  <pinterest-button
+   url='http://next.jvo.io/pages/image.html'
+   urlImage='http://media.jvo.io/media/b3a2c915fc4bd7cc3c6a4ab32a26d380.jpeg'
+   description='John VanOrange'>
+  </pinterest-button>
+  <gplus-one href='http://next.jvo.io/pages/image.html'></gplus-one>
  </social-links>
  
  <footer>

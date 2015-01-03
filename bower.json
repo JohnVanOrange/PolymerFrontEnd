@@ -16,6 +16,10 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~0.5.2",
-    "core-ajax": "Polymer/core-ajax#~0.5.2"
+    "core-ajax": "Polymer/core-ajax#~0.5.2",
+    "WebIcons": "JohnVanOrange/WebIcons",
+    "facebook-button": "~0.1.5",
+    "pinterest-button": "gustavoisensee/pinterest-button#gh-pages",
+    "gplus-elements": "~0.2.1"
   }
 }

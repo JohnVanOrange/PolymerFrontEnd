@@ -1,0 +1,19 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="user-profile" attributes="username hash" noscript>
+  <template>
+    <style>
+     img {
+      margin-right: 4px;
+      height: 24px;
+      width: 24px;
+      border-radius: 12px;
+     }
+    </style>
+
+    <a href='/u/{{username}}'>
+     <img src='//www.gravatar.com/avatar/{{hash}}?s=48&amp;d=retro&amp;r=pg' height='24' width='24'>
+     {{username}}
+    </a>
+  </template>
+</polymer-element>
